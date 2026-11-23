@@ -72,7 +72,7 @@ sudo docker run -d --name lifedays -p 8080:8000 lifedays:1.0
 
 **Перевірка стану контейнера (статус `healthy`) та журналу роботи (`sudo docker ps` і `sudo docker logs lifedays`):**
 
-![Статус та логи контейнера](./screenshots/Docker%20(4).png)
+![Статус та логи контейнера](./screenshots/Docker-4.png)
 
 **Перевірка службового endpoint `/health` для версії 1.0.0:**
 
