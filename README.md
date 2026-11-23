@@ -34,7 +34,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     TZ=Europe/Kyiv
 
 RUN groupadd --system web && \
-    useradd --system --gid web web
+    useradd --system --create-home --gid web web
 
 COPY requirements.txt .
 

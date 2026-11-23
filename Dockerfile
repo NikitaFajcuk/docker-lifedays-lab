@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 TZ=Europe/Kyiv
-RUN groupadd --system web && useradd --system --gid web web
+RUN groupadd --system web && useradd --system --create-home --gid web web
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py calculator.py VERSION ./
